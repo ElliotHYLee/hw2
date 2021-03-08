@@ -1,5 +1,3 @@
-import numpy as np
-
 def validate(msg, key):
     DEPTH = key[0]
     if DEPTH == 1:
