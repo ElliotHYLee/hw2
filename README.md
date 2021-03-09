@@ -14,10 +14,10 @@ arguments:<br>
 For example, to test depth=4, repeat 99, mesage = "hello world" <br>
 [DO NOT forget double quotations for the message]
 
-```python encoder.py -d 4 -r 99 "hello world"```
+```python encrypt.py -d 4 -r 99 "hello world"```
 
 To view help, <br>
-```python encoder.py -h```
+```python encrypt.py -h```
 
 
 # To test decoder
@@ -25,7 +25,7 @@ arguments pattern is the same.
 
 [DO NOT forget double quotations for the message]
 
-```python decoder.py -d 4 -r 99 "hel dlwlroo"```
+```python decrypt.py -d 4 -r 99 "hel dlwlroo"```
 
 To view help, <br>
-```python decoder.py -h```
+```python decrypt.py -h```
