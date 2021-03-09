@@ -1,4 +1,5 @@
 from functions import *
+import sys
 
 def encoder(msg, key):
     repeat = key[1]
@@ -50,3 +51,5 @@ if __name__ == "__main__":
     test_enc_dec()
     test_hw_test1()
     test_hw_test2()
+
+    
