@@ -25,7 +25,7 @@ arguments pattern is the same.
 
 [DO NOT forget double quotations for the message]
 
-```python decrypt.py -d 4 -r 99 -m "hel dlwlroo"```
+```python decrypt.py -d 4 -r 99 -m "hl lwleoodr"```
 
 To view help, <br>
 ```python decrypt.py -h```
