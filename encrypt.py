@@ -2,6 +2,8 @@ from functions import *
 import sys, argparse
 
 def encoder(msg, key):
+    #input validation has to be check here, otherwise the exit commond cannot pass such far away
+    DEPTH, N = validate(msg, key)
     repeat = key[1]
     for i in range(0, repeat):
         msg = encrypt(msg, key)
