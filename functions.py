@@ -4,15 +4,15 @@ def validate(msg, key):
     ErrMsg = 0
     if DEPTH <= 1:
         print("Depth needs to meet the condition:  DEPTH = integer, DEPTH >=2")
-        ErrMsg = 1
+        ErrMsg += 1
     if REPEAT < 1:
         print("Repeat needs to meet the condition:  REPEAT = integer, REPEAT >=1")
-        ErrMsg = 1
+        ErrMsg += 1
     N = len(msg)
     if N < 1:
         print("THe message needs to be longer than 1 character")
-        ErrMsg = 1
-    if ErrMsg != 0:
+        ErrMsg += 1
+    if ErrMsg > 0:
         exit(-1)
     return DEPTH, N
 
