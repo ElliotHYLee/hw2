@@ -1,7 +1,11 @@
 def validate(msg, key):
     DEPTH = key[0]
+    REPEAT = key[1]
     if DEPTH <= 1:
         print("Depth needs to meet the condition:  DEPTH = integer, DEPTH >=2")
+        exit(-1)
+    if REPEAT < 1:
+        print("Repeat needs to meet the condition:  REPEAT = integer, REPEAT >=1")
         exit(-1)
     N = len(msg)
     if N < 1:
