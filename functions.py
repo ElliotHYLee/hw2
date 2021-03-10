@@ -1,6 +1,6 @@
 def validate(msg, key):
     DEPTH = key[0]
-    if DEPTH == 1:
+    if DEPTH <= 1:
         print("Depth needs to meet the condition:  DEPTH = integer, DEPTH >=2")
         exit(-1)
     N = len(msg)
