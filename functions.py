@@ -9,7 +9,7 @@ def validate(msg, key):
         print("Repeat needs to meet the condition:  REPEAT = integer, REPEAT >=1")
         ErrMsg += 1
     N = len(msg)
-    if N < 1:
+    if N <= 1:
         print("THe message needs to be longer than 1 character")
         ErrMsg += 1
     if ErrMsg > 0:
