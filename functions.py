@@ -32,7 +32,7 @@ def getNextRow(idx, DEPTH):
 
 def encrypt(msg, key):
     DEPTH, N = validate(msg, key)
-
+    msg = msg.lower()
     table = getTable(DEPTH, N)
     for idx in range (0, N):
         r = getNextRow(idx, DEPTH)
@@ -45,7 +45,7 @@ def encrypt(msg, key):
 
 def decrypt(msg, key):
     DEPTH, N = validate(msg, key)
-
+    msg = msg.lower()
     table = getTable(DEPTH, N)
     for idx in range (0, N):
         r = getNextRow(idx, DEPTH)
